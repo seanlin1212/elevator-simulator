@@ -1,0 +1,19 @@
+{
+  "name": "elevator-simulator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seanlin1212/elevator-simulator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seanlin1212/elevator-simulator/issues"
+  },
+  "homepage": "https://github.com/seanlin1212/elevator-simulator#readme"
+}
