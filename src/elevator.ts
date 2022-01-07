@@ -73,6 +73,7 @@ export class Elevator {
       case Elevator.State.Open:
         this.time += t;
         if (this.time >= Elevator.OPEN_TIME) {
+          this.time = 0;
           // 乘客下電梯
           this.dropPassengers();
 
@@ -93,6 +94,7 @@ export class Elevator {
       case Elevator.State.Moving:
         this.time += t;
         if (this.time >= Elevator.MOVING_TIME) {
+          this.time = 0;
           // 電梯移動一層樓完成
           if (this.direction === Elevator.Direction.Up) {
             this.floor++;
