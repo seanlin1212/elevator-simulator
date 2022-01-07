@@ -1,21 +1,13 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.doSomeStuff = void 0;
-console.log('Try npm run lint/fix!');
-// const longString =
-//   'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut aliquet diam.';
-// const trailing = 'Semicolon';
-// const why = 'am I tabbed?';
-function doSomeStuff(withThis, andThat, andThose) {
-    //function on one line
-    if (!andThose.length) {
-        return false;
-    }
-    console.log(withThis);
-    console.log(andThat);
-    console.dir(andThose);
-    return;
-}
-exports.doSomeStuff = doSomeStuff;
+exports.main = void 0;
+const simulator_1 = require("./simulator");
+main();
 // TODO: more examples
+function main() {
+    const simulator = new simulator_1.Simulator();
+    simulator.init();
+    simulator.start();
+}
+exports.main = main;
 //# sourceMappingURL=index.js.map
